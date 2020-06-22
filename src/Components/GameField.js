@@ -4,6 +4,7 @@ import { PropTypes } from 'prop-types';
 import './GameField.css'
 import CardList from './CardList';
 import useCardNumberGenerator from '../CustomHooks/UseCardNumberGenerator';
+import TimerComponent from './TimerComponent';
 
 
 
@@ -12,13 +13,16 @@ function GameField(props) {
     const { 
         availables, 
         addToSelecteds, 
-        removeFromSelecteds, } = useGameState();
+        removeFromSelecteds,
+        secondsLeft } = useGameState();
 
     const { cardNumbers } = useCardNumberGenerator(); 
 
     useEffect(() => {
         if (availables.length == 0)        
-            props.onGameFinished('inCredits');
+            props.onGameFinished('win');
+        if (secondsLeft === 0)
+            props.onGameFinished('lost');
     });
 
     const canHide = (number) => {
@@ -28,6 +32,7 @@ function GameField(props) {
     }
 
     return (
+        <div>
             <CardList 
             cardNumbers = {cardNumbers}
             availables = {availables}
@@ -36,6 +41,8 @@ function GameField(props) {
             canHide={canHide}>
 
             </CardList>
+            <TimerComponent secondsLeft={secondsLeft}></TimerComponent>
+        </div>
         );
 }
 

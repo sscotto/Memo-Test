@@ -29,8 +29,7 @@ export default function Card(props) {
     }
 
     return (               
-        <div className="col-sm-3">  
-        {console.log("Rendering:", props.number)}                
+        <div className="col-sm-3">                  
             <input 
                 type="image" 
                 onClick={revealNumber} 

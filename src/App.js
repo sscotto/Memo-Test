@@ -8,7 +8,7 @@ import useApplicationState from './CustomHooks/UseApplicationState';
 function App() {
   const { 
     setStatus, 
-    gameStatus, 
+    gameStatus,     
     gameId } = useApplicationState();
 
   return (
@@ -17,7 +17,7 @@ function App() {
       {
       gameStatus === 'inMenu' ? <StartMenu startGame={setStatus} /> 
       : gameStatus === 'playing' ? <GameField key={gameId} onGameFinished={setStatus} /> 
-      : <Credits startGame={setStatus} />
+      : <Credits startGame={setStatus} status={gameStatus} />
       }      
       </header>
     </div>

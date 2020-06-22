@@ -5,8 +5,8 @@ import { PropTypes } from 'prop-types';
 
 const CardList = (props) => {    
 
-   const BuildSrc = (number) => { return "/images/" + number + ".jpg"; } 
-    const BuildGraySrc = (number) => {return "/images/" + number + "_gray.jpg" }    
+   const BuildSrc = (number) => { return "/images/" + number + ".png"; } 
+    const BuildGraySrc = (number) => {return "/images/" + number + "_gray.png" }    
   
     return (
 

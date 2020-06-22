@@ -1,8 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const useGameState = () => {
     const [selecteds, setSelecteds] = useState([]);
     const [availables, setAvailables] = useState([1, 2, 3, 4, 5, 6]); 
+    const [secondsLeft, setSecondsLeft] = useState(25);
+
+    useEffect(() => {
+      if (secondsLeft > 0 && availables.length > 0) {       
+        const timerId = setTimeout(() => setSecondsLeft(secondsLeft - 1), 1000);
+        return () => clearTimeout(timerId);
+      }
+    });
 
     const addToSelecteds = (number) => {
         let canAddToSelecteds = (selecteds.length === 2) ? false : true;
@@ -24,7 +32,7 @@ const useGameState = () => {
 
         setSelecteds(selecteds.filter(s => s !== number));
     }
-    return { selecteds, availables, addToSelecteds, removeFromSelecteds };
+    return { selecteds, availables, addToSelecteds, removeFromSelecteds, secondsLeft };
 }
 
 export default useGameState;
