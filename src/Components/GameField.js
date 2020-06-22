@@ -19,7 +19,7 @@ function GameField(props) {
     const { cardNumbers } = useCardNumberGenerator(); 
 
     useEffect(() => {
-        if (availables.length == 0)        
+        if (availables.length === 0)        
             props.onGameFinished('win');
         if (secondsLeft === 0)
             props.onGameFinished('lost');

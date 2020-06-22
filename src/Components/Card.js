@@ -14,7 +14,7 @@ export default function Card(props) {
             setUseGrayImg(true);
         }
         return () => { }            
-    },[props.availables])
+    },[props.availables, props.number])
 
     const revealNumber = () => {              
         setShowImg(props.onReveal(props.number));             
@@ -31,6 +31,7 @@ export default function Card(props) {
     return (               
         <div className="col-sm-3">                  
             <input 
+                alt="BackCard"
                 type="image" 
                 onClick={revealNumber} 
                 className="img-card" 
@@ -39,6 +40,7 @@ export default function Card(props) {
                 >
             </input>       
             <input 
+                alt="FrontCard"
                 type="image"
                 onClick={hideNumber}          
                 className="img-card"

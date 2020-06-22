@@ -38,9 +38,9 @@ const useCardNumberGenerator = () => {
 
     //Es correcto usar el useEffect para llenar una unica vez el arreglo con numeros randoms?
     useEffect(() => {
-        if (cardNumbers.length == 0)
+        if (cardNumbers.length === 0)
             setCardNumbers(createRandomNumbers());
-    })
+    },[cardNumbers.length])
 
     return { cardNumbers };
 }
