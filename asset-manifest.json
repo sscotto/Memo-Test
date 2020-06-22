@@ -1,26 +1,38 @@
 {
   "files": {
     "main.css": "/memo-test/static/css/main.e8b90644.chunk.css",
-    "main.js": "/memo-test/static/js/main.ca9a884c.chunk.js",
-    "main.js.map": "/memo-test/static/js/main.ca9a884c.chunk.js.map",
+    "main.js": "/memo-test/static/js/main.abc2c1c6.chunk.js",
+    "main.js.map": "/memo-test/static/js/main.abc2c1c6.chunk.js.map",
     "runtime-main.js": "/memo-test/static/js/runtime-main.7d659c60.js",
     "runtime-main.js.map": "/memo-test/static/js/runtime-main.7d659c60.js.map",
     "static/css/2.af3c1da9.chunk.css": "/memo-test/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.e6cda444.chunk.js": "/memo-test/static/js/2.e6cda444.chunk.js",
-    "static/js/2.e6cda444.chunk.js.map": "/memo-test/static/js/2.e6cda444.chunk.js.map",
+    "static/js/2.8d9956f6.chunk.js": "/memo-test/static/js/2.8d9956f6.chunk.js",
+    "static/js/2.8d9956f6.chunk.js.map": "/memo-test/static/js/2.8d9956f6.chunk.js.map",
     "index.html": "/memo-test/index.html",
-    "precache-manifest.35d3186ac482cd2b8bc0e880f3f80bdc.js": "/memo-test/precache-manifest.35d3186ac482cd2b8bc0e880f3f80bdc.js",
+    "precache-manifest.42c555642b338d315367a5df7fd063d6.js": "/memo-test/precache-manifest.42c555642b338d315367a5df7fd063d6.js",
     "service-worker.js": "/memo-test/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/memo-test/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.e8b90644.chunk.css.map": "/memo-test/static/css/main.e8b90644.chunk.css.map",
-    "static/js/2.e6cda444.chunk.js.LICENSE.txt": "/memo-test/static/js/2.e6cda444.chunk.js.LICENSE.txt",
+    "static/js/2.8d9956f6.chunk.js.LICENSE.txt": "/memo-test/static/js/2.8d9956f6.chunk.js.LICENSE.txt",
+    "static/media/1.png": "/memo-test/static/media/1.db1b6dbe.png",
+    "static/media/1_gray.png": "/memo-test/static/media/1_gray.9326c6ca.png",
+    "static/media/2.png": "/memo-test/static/media/2.4b9722d3.png",
+    "static/media/2_gray.png": "/memo-test/static/media/2_gray.662bd71e.png",
+    "static/media/3.png": "/memo-test/static/media/3.d793cad2.png",
+    "static/media/3_gray.png": "/memo-test/static/media/3_gray.818cd7f5.png",
+    "static/media/4.png": "/memo-test/static/media/4.17faf19d.png",
+    "static/media/4_gray.png": "/memo-test/static/media/4_gray.62340972.png",
+    "static/media/5.png": "/memo-test/static/media/5.3484cf6a.png",
+    "static/media/5_gray.png": "/memo-test/static/media/5_gray.836206e1.png",
+    "static/media/6.png": "/memo-test/static/media/6.9cb12cd1.png",
+    "static/media/6_gray.png": "/memo-test/static/media/6_gray.40e18ce6.png",
     "static/media/back_card.jpg": "/memo-test/static/media/back_card.fbb0bdca.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7d659c60.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.e6cda444.chunk.js",
+    "static/js/2.8d9956f6.chunk.js",
     "static/css/main.e8b90644.chunk.css",
-    "static/js/main.ca9a884c.chunk.js"
+    "static/js/main.abc2c1c6.chunk.js"
   ]
 }
