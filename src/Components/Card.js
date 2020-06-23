@@ -33,7 +33,8 @@ export default function Card(props) {
     },[props.availables, props.number])
 
     const revealNumber = () => {              
-        setShowImg(props.onReveal(props.number));             
+        setShowImg(props.onReveal(props.number)); 
+        props.incrementTries();
     }
 
     const hideNumber = () => {
@@ -75,5 +76,6 @@ Card.propTypes  = {
     onReveal: PropTypes.func,
     onHide: PropTypes.func,
     canHide: PropTypes.func,
-    availables: PropTypes.array
+    availables: PropTypes.array,
+    incrementTries: PropTypes.func
 }

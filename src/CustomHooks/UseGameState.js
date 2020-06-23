@@ -3,8 +3,9 @@ import { useState, useEffect } from 'react';
 const useGameState = () => {
     const [selecteds, setSelecteds] = useState([]);
     const [availables, setAvailables] = useState([1, 2, 3, 4, 5, 6]); 
-    const [secondsLeft, setSecondsLeft] = useState(25);
+    const [secondsLeft, setSecondsLeft] = useState(25);  
 
+    
     useEffect(() => {
       if (secondsLeft > 0 && availables.length > 0) {       
         const timerId = setTimeout(() => setSecondsLeft(secondsLeft - 1), 1000);
@@ -17,7 +18,8 @@ const useGameState = () => {
         
         if (canAddToSelecteds){                    
             let newSelecteds = selecteds.concat(number);
-            setSelecteds(newSelecteds)            
+            setSelecteds(newSelecteds)   
+                     
             if (newSelecteds.length === 2 && newSelecteds[0] === newSelecteds[1]){ 
                
                 setAvailables(availables.filter(e => e !== number ));

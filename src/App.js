@@ -9,7 +9,7 @@ function App() {
   const { 
     setStatus, 
     gameStatus,     
-    gameId } = useApplicationState();
+    gameId } = useApplicationState();    
 
   return (
     <div className="App">

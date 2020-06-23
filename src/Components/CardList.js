@@ -19,7 +19,8 @@ const CardList = (props) => {
                     onReveal={props.addToSelecteds} 
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide} 
-                    availables={props.availables}  
+                    availables={props.availables} 
+                    incrementTries={props.incrementTries} 
                                      
                     />    
                 <Card 
@@ -30,7 +31,7 @@ const CardList = (props) => {
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide}   
                     availables={props.availables}  
-                                     
+                    incrementTries={props.incrementTries}          
                     />    
                 <Card 
                      buildImageUrl={BuildSrc} 
@@ -40,7 +41,7 @@ const CardList = (props) => {
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide}   
                     availables={props.availables}  
-                                     
+                    incrementTries={props.incrementTries}           
                     />   
                 <Card 
                     buildImageUrl={BuildSrc} 
@@ -50,7 +51,7 @@ const CardList = (props) => {
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide}   
                     availables={props.availables}  
-                                     
+                    incrementTries={props.incrementTries}              
                     />                                                     
             </div>
             <div className="row">                
@@ -62,7 +63,7 @@ const CardList = (props) => {
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide}   
                     availables={props.availables}  
-                                     
+                    incrementTries={props.incrementTries}            
                     />    
                 <Card 
                    buildImageUrl={BuildSrc} 
@@ -72,7 +73,7 @@ const CardList = (props) => {
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide}   
                     availables={props.availables}  
-                                     
+                    incrementTries={props.incrementTries}         
                     />    
                 <Card 
                     buildImageUrl={BuildSrc} 
@@ -82,7 +83,7 @@ const CardList = (props) => {
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide}   
                     availables={props.availables}  
-                                     
+                    incrementTries={props.incrementTries}            
                     />   
                 <Card 
                     buildImageUrl={BuildSrc} 
@@ -92,7 +93,7 @@ const CardList = (props) => {
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide}   
                     availables={props.availables}  
-                                     
+                    incrementTries={props.incrementTries}             
                     />   
             </div>
             <div className="row">                
@@ -104,7 +105,7 @@ const CardList = (props) => {
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide}   
                     availables={props.availables}  
-                                     
+                    incrementTries={props.incrementTries}             
                     />    
                 <Card 
                    buildImageUrl={BuildSrc} 
@@ -114,7 +115,7 @@ const CardList = (props) => {
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide}   
                     availables={props.availables}  
-                                     
+                    incrementTries={props.incrementTries}           
                     />    
                 <Card 
                     buildImageUrl={BuildSrc} 
@@ -124,7 +125,7 @@ const CardList = (props) => {
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide}   
                     availables={props.availables}  
-                                     
+                    incrementTries={props.incrementTries}           
                     />   
                 <Card 
                     buildImageUrl={BuildSrc} 
@@ -134,7 +135,7 @@ const CardList = (props) => {
                     onHide={props.removeFromSelecteds} 
                     canHide={props.canHide}   
                     availables={props.availables}  
-                                     
+                    incrementTries={props.incrementTries}           
                     />   
             </div> 
         </div>
@@ -148,6 +149,7 @@ CardList.propTypes  = {
     canHide: PropTypes.func,
     OnCheckAvailables: PropTypes.func,
     availables: PropTypes.array,
+    incrementTries: PropTypes.func
 }
 
 export default CardList;
